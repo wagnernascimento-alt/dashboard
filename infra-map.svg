@@ -50,16 +50,16 @@
     <rect class="card" x="1000" y="40" width="220" height="120"/>
     <rect class="icon-fill" x="1020" y="68" width="26" height="14" rx="2"/>
     <rect class="icon-fill" x="1020" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="1020" y="110">Node 05</text>
-    <text class="metric" x="1020" y="130">Status</text>
+    <text class="title" x="1020" y="260">Node 05</text>
+    <text class="metric" x="1020" y="260">Status</text>
   </g>
 
   <g id="cell-node_06_status">
     <rect class="card" x="1240" y="40" width="220" height="120"/>
     <rect class="icon-fill" x="1260" y="68" width="26" height="14" rx="2"/>
     <rect class="icon-fill" x="1260" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="1260" y="110">Node 06</text>
-    <text class="metric" x="1260" y="130">Status</text>
+    <text class="title" x="1260" y="260">Node 06</text>
+    <text class="metric" x="1260" y="260">Status</text>
   </g>
 
   <!-- ======================= EDGE / STORAGE ======================= -->

@@ -1,0 +1,71 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "-- Grafana --",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "graphTooltip": 0,
+  "panels": [
+    {
+      "datasource": {
+        "type": "postgres",
+        "uid": "POSTGRES_DS_UID"
+      },
+      "gridPos": {
+        "h": 20,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "svgFile": "infra-map.svg",
+        "yamlFile": "flow-panel.yaml"
+      },
+      "pluginVersion": "9.5.0",
+      "title": "Infrastructure Security Map",
+      "type": "andrewbmchugh-flow-panel"
+    }
+  ],
+  "refresh": "10s",
+  "schemaVersion": 38,
+  "style": "dark",
+  "tags": [
+    "security",
+    "infrastructure",
+    "pikolin"
+  ],
+  "templating": {
+    "list": [
+      {
+        "name": "host",
+        "type": "query",
+        "label": "Host",
+        "datasource": {
+          "type": "postgres",
+          "uid": "POSTGRES_DS_UID"
+        },
+        "query": "SELECT DISTINCT host FROM security_events ORDER BY host",
+        "refresh": 1,
+        "includeAll": true,
+        "multi": false
+      }
+    ]
+  },
+  "time": {
+    "from": "now-6h",
+    "to": "now"
+  },
+  "title": "Pikolin Sentinel \u2013 Live Security Map",
+  "uid": "pikolin-sentinel-map",
+  "version": 1
+}

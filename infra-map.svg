@@ -4,7 +4,7 @@
 
   <defs>
     <style>
-      .card { fill:#0f172a; stroke:#1f2937; stroke-width:3; rx:14; }
+      .card { fill:#0f172a; stroke: transparent; stroke-width:3; rx:14; }
       .title { fill:#e5e7eb; font-size:13px; font-weight:600; }
       .metric { fill:#cbd5f5; font-size:11px; }
       .icon-fill { fill:#60a5fa; }

@@ -27,62 +27,6 @@ tagConfig:
 # ------------------------------------------------------------------------------
 
 cells:
-
-  # ---------------------------------------------------------------------------
-  # DC01
-  # ---------------------------------------------------------------------------
-  dc01_status:
-    dataRef: dc01_status
-    label:
-      separator: replace
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }   # OK
-        - { color: "orange", level: 1 }            # ALERT
-        - { color: "red", level: 2 }               # CRITICAL
-    tags: ["status", "bitdefender","active"]
-    link:
-      url: "/d/host-history?var-host=DC01"
-      targetBlank: true
-
-  dc01_threats:
-    dataRef: dc01_threats
-    label:
-      separator: colon
-      units: short
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "red", level: 1 }
-    tags: ["threats", "bitdefender"]
-
-  # ---------------------------------------------------------------------------
-  # ProtheusDB2
-  # ---------------------------------------------------------------------------
-  protheusdb2_status:
-    dataRef: protheusdb2_status
-    label:
-      separator: replace
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "orange", level: 1 }
-        - { color: "red", level: 2 }
-    tags: ["status", "bitdefender"]
-    link:
-      url: "/d/host-history?var-host=ProtheusDB2"
-      targetBlank: true
-
-  protheusdb2_threats:
-    dataRef: protheusdb2_threats
-    label:
-      separator: colon
-      units: short
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "red", level: 1 }
-    tags: ["threats", "bitdefender"]
   # ---------------------------------------------------------------------------
   # ENABLED HOSTS
   # ---------------------------------------------------------------------------

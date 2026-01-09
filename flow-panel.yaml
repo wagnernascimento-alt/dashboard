@@ -1,10 +1,30 @@
-# ------------------------------------------------------------------------------
-# Pikolin Sentinel - Grafana Flow Panel
-# Desenvolvido por: Wagner N Nascimento ©
-# ------------------------------------------------------------------------------
+# ==============================================================================
+# Pikolin Sentinel - Flow Panel Config
+# Wagner N Nascimento ©
+# ==============================================================================
 
 cellIdPreamble: "cell-"
 gradientMode: "hue"
+
+# ------------------------------------------------------------------------------
+# Aparência e destaque
+# ------------------------------------------------------------------------------
+tagConfig:
+  legend:
+    - "Status:"
+    - "OK"
+    - "WARN"
+    - "CRIT"
+    - "|"
+    - "Origem:"
+    - "Bitdefender"
+  color: "yellow"
+  highlightRgbFactor: 5
+  lowlightAlphaFactor: 0.3
+
+# ------------------------------------------------------------------------------
+# Cells
+# ------------------------------------------------------------------------------
 
 cells:
 
@@ -18,8 +38,9 @@ cells:
     labelColor:
       thresholds:
         - { color: "semi-dark-green", level: 0 }   # OK
-        - { color: "orange", level: 1 }            # Warning
-        - { color: "red", level: 2 }               # Critical
+        - { color: "orange", level: 1 }            # ALERT
+        - { color: "red", level: 2 }               # CRITICAL
+    tags: ["status", "bitdefender"]
     link:
       url: "/d/host-history?var-host=DC01"
       targetBlank: true
@@ -33,6 +54,7 @@ cells:
       thresholds:
         - { color: "semi-dark-green", level: 0 }
         - { color: "red", level: 1 }
+    tags: ["threats", "bitdefender"]
 
   # ---------------------------------------------------------------------------
   # ProtheusDB2
@@ -46,6 +68,7 @@ cells:
         - { color: "semi-dark-green", level: 0 }
         - { color: "orange", level: 1 }
         - { color: "red", level: 2 }
+    tags: ["status", "bitdefender"]
     link:
       url: "/d/host-history?var-host=ProtheusDB2"
       targetBlank: true
@@ -59,19 +82,4 @@ cells:
       thresholds:
         - { color: "semi-dark-green", level: 0 }
         - { color: "red", level: 1 }
-
-  # ---------------------------------------------------------------------------
-  # VMware vCenter
-  # ---------------------------------------------------------------------------
-  vcenter_status:
-    dataRef: vcenter_status
-    label:
-      separator: replace
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "orange", level: 1 }
-        - { color: "red", level: 2 }
-    link:
-      url: "/d/host-history?var-host=vCenter"
-      targetBlank: true
+    tags: ["threats", "bitdefender"]

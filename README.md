@@ -12,4 +12,4 @@ Live infrastructure and security visualization using Grafana Flow Panel.
 Bitdefender → n8n → PostgreSQL → Grafana (SVG Flow Panel)
 
 ## License
-Wagner N Nascimento ©
+MIT

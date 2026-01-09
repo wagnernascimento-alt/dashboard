@@ -54,7 +54,7 @@ cells:
       thresholds:
         - { color: "semi-dark-green", level: 0 }
         - { color: "red", level: 1 }
-    tags: ["threats", "bitdefender"]
+    tags: ["threats", "bitdefender","active"]
 
   # ---------------------------------------------------------------------------
   # ProtheusDB2

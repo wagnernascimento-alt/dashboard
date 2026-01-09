@@ -40,7 +40,7 @@ cells:
         - { color: "semi-dark-green", level: 0 }   # OK
         - { color: "orange", level: 1 }            # ALERT
         - { color: "red", level: 2 }               # CRITICAL
-    tags: ["status", "bitdefender"]
+    tags: ["status", "bitdefender","active"]
     link:
       url: "/d/host-history?var-host=DC01"
       targetBlank: true
@@ -54,7 +54,7 @@ cells:
       thresholds:
         - { color: "semi-dark-green", level: 0 }
         - { color: "red", level: 1 }
-    tags: ["threats", "bitdefender","active"]
+    tags: ["threats", "bitdefender"]
 
   # ---------------------------------------------------------------------------
   # ProtheusDB2

@@ -1,0 +1,5 @@
+cells:
+  dc01_status:
+    dataRef: dc01_status
+    label:
+      separator: replace

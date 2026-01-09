@@ -7,130 +7,87 @@
       .card { fill:#0f172a; stroke:#1f2937; stroke-width:3; rx:14; }
       .title { fill:#e5e7eb; font-size:13px; font-weight:600; }
       .metric { fill:#cbd5f5; font-size:11px; }
-      .icon { font-size:20px; }
-      .group { }
+      .icon-fill { fill:#60a5fa; }
     </style>
   </defs>
 
-  <!-- ======================= CORE / SERVERS ======================= -->
+  <!-- ======================= CORE NODES ======================= -->
 
-  <!-- Row 1 -->
-  <g id="cell-dc01_status" class="group">
+  <g id="cell-node_01_status">
     <rect class="card" x="40" y="40" width="220" height="120"/>
-    <text class="icon" x="60" y="85">🖥️</text>
-    <text class="title" x="60" y="110">DC01</text>
+    <rect class="icon-fill" x="60" y="68" width="26" height="14" rx="2"/>
+    <rect class="icon-fill" x="60" y="86" width="26" height="8" rx="2"/>
+    <text class="title" x="60" y="110">Node 01</text>
     <text class="metric" x="60" y="130">Status</text>
   </g>
 
-  <g id="cell-acessoremoto_status">
+  <g id="cell-node_02_status">
     <rect class="card" x="280" y="40" width="220" height="120"/>
-    <text class="icon" x="300" y="85">🖧</text>
-    <text class="title" x="300" y="110">Acesso Remoto</text>
+    <rect class="icon-fill" x="300" y="68" width="26" height="14" rx="2"/>
+    <rect class="icon-fill" x="300" y="86" width="26" height="8" rx="2"/>
+    <text class="title" x="300" y="110">Node 02</text>
     <text class="metric" x="300" y="130">Status</text>
   </g>
 
-  <g id="cell-protheusdb2_status">
+  <g id="cell-node_03_status">
     <rect class="card" x="520" y="40" width="220" height="120"/>
-    <text class="icon" x="540" y="85">🗄️</text>
-    <text class="title" x="540" y="110">Protheus DB2</text>
+    <ellipse class="icon-fill" cx="553" cy="72" rx="13" ry="5"/>
+    <rect class="icon-fill" x="540" y="72" width="26" height="18"/>
+    <ellipse class="icon-fill" cx="553" cy="90" rx="13" ry="5"/>
+    <text class="title" x="540" y="110">Node 03</text>
     <text class="metric" x="540" y="130">Status</text>
   </g>
 
-  <g id="cell-protheusapp_status">
+  <g id="cell-node_04_status">
     <rect class="card" x="760" y="40" width="220" height="120"/>
-    <text class="icon" x="780" y="85">📦</text>
-    <text class="title" x="780" y="110">Protheus App</text>
+    <rect class="icon-fill" x="780" y="68" width="26" height="14" rx="2"/>
+    <rect class="icon-fill" x="780" y="86" width="26" height="8" rx="2"/>
+    <text class="title" x="780" y="110">Node 04</text>
     <text class="metric" x="780" y="130">Status</text>
   </g>
 
-  <g id="cell-vmware_vcenter_server_status">
+  <g id="cell-node_05_status">
     <rect class="card" x="1000" y="40" width="220" height="120"/>
-    <text class="icon" x="1020" y="85">🖥️</text>
-    <text class="title" x="1020" y="110">VMware vCenter</text>
+    <rect class="icon-fill" x="1020" y="68" width="26" height="14" rx="2"/>
+    <rect class="icon-fill" x="1020" y="86" width="26" height="8" rx="2"/>
+    <text class="title" x="1020" y="110">Node 05</text>
     <text class="metric" x="1020" y="130">Status</text>
   </g>
 
-  <g id="cell-vmware_infrastructure_status">
+  <g id="cell-node_06_status">
     <rect class="card" x="1240" y="40" width="220" height="120"/>
-    <text class="icon" x="1260" y="85">🖥️</text>
-    <text class="title" x="1260" y="110">VMware Infra</text>
+    <rect class="icon-fill" x="1260" y="68" width="26" height="14" rx="2"/>
+    <rect class="icon-fill" x="1260" y="86" width="26" height="8" rx="2"/>
+    <text class="title" x="1260" y="110">Node 06</text>
     <text class="metric" x="1260" y="130">Status</text>
   </g>
 
-  <!-- ======================= NETWORK ======================= -->
+  <!-- ======================= EDGE / STORAGE ======================= -->
 
-  <g id="cell-fortigate_100f_status">
+  <g id="cell-node_07_status">
     <rect class="card" x="40" y="190" width="220" height="120"/>
-    <text class="icon" x="60" y="235">🖥️</text>
-    <text class="title" x="60" y="260">Fortigate 100F</text>
+    <rect class="icon-fill" x="60" y="72" width="26" height="18" rx="3"/>
+    <rect class="icon-fill" x="60" y="92" width="26" height="6" rx="3"/>
+    <text class="title" x="60" y="260">Node 07</text>
     <text class="metric" x="60" y="280">Status</text>
   </g>
 
-  <g id="cell-fortigate_60f_status">
+  <g id="cell-node_08_status">
     <rect class="card" x="280" y="190" width="220" height="120"/>
-    <text class="icon" x="300" y="235">🖥️</text>
-    <text class="title" x="300" y="260">Fortigate 60F</text>
+    <rect class="icon-fill" x="300" y="72" width="26" height="18" rx="3"/>
+    <rect class="icon-fill" x="300" y="92" width="26" height="6" rx="3"/>
+    <text class="title" x="300" y="260">Node 08</text>
     <text class="metric" x="300" y="280">Status</text>
   </g>
 
-  <g id="cell-sw_producao_172_20_1_30_status">
-    <rect class="card" x="520" y="190" width="220" height="120"/>
-    <text class="icon" x="540" y="235">🖥️</text>
-    <text class="title" x="540" y="260">SW Produção</text>
-    <text class="metric" x="540" y="280">Status</text>
-  </g>
+  <!-- ======================= INACTIVE ======================= -->
 
-  <g id="cell-sw_dist1_172_20_1_31_status">
-    <rect class="card" x="760" y="190" width="220" height="120"/>
-    <text class="icon" x="780" y="235">🖥️</text>
-    <text class="title" x="780" y="260">SW Dist 1</text>
-    <text class="metric" x="780" y="280">Status</text>
-  </g>
-
-  <g id="cell-sw_dist2_172_20_1_32_status">
-    <rect class="card" x="1000" y="190" width="220" height="120"/>
-    <text class="icon" x="1020" y="235">🖥️</text>
-    <text class="title" x="1020" y="260">SW Dist 2</text>
-    <text class="metric" x="1020" y="280">Status</text>
-  </g>
-
-  <g id="cell-idrac_firewall_172_20_1_140_status">
-    <rect class="card" x="1240" y="190" width="220" height="120"/>
-    <text class="icon" x="1260" y="235">🖥️</text>
-    <text class="title" x="1260" y="260">iDRAC Firewall</text>
-    <text class="metric" x="1260" y="280">Status</text>
-  </g>
-
-  <!-- ======================= STORAGE / BACKUP ======================= -->
-
-  <g id="cell-nas_status">
+  <g id="cell-node_09_status">
     <rect class="card" x="40" y="340" width="220" height="120"/>
-    <text class="icon" x="60" y="385">💾</text>
-    <text class="title" x="60" y="410">NAS</text>
-    <text class="metric" x="60" y="430">Status</text>
-  </g>
-
-  <g id="cell-veeam_backup_status">
-    <rect class="card" x="280" y="340" width="220" height="120"/>
-    <text class="icon" x="300" y="385">💾</text>
-    <text class="title" x="300" y="410">Veeam Backup</text>
-    <text class="metric" x="300" y="430">Status</text>
-  </g>
-
-  <g id="cell-veeam_immutable_status">
-    <rect class="card" x="520" y="340" width="220" height="120"/>
-    <text class="icon" x="540" y="385">💾</text>
-    <text class="title" x="540" y="410">Veeam Immutable</text>
-    <text class="metric" x="540" y="430">Status</text>
-  </g>
-
-  <!-- ======================= DISABLED ======================= -->
-
-  <g id="cell-sw_fbc1_172_20_1_37_status">
-    <rect class="card" x="40" y="490" width="220" height="120"/>
-    <text class="icon" x="60" y="535">⛔</text>
-    <text class="title" x="60" y="560">SW FBC1</text>
-    <text class="metric" x="60" y="580">Disabled</text>
+    <rect class="icon-fill" x="60" y="72" width="26" height="18" rx="3"/>
+    <rect class="icon-fill" x="60" y="92" width="26" height="6" rx="3"/>
+    <text class="title" x="60" y="410">Node 09</text>
+    <text class="metric" x="60" y="430">Inactive</text>
   </g>
 
 </svg>

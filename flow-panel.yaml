@@ -1,5 +1,7 @@
 # ==============================================================================
-# Pikolin Sentinel - Flow Panel Config
+# Sentinel Flow Panel Config (Anonymized)
+# ==============================================================================
+# Public-safe version – no infra disclosure
 # Wagner N Nascimento ©
 # ==============================================================================
 
@@ -7,7 +9,7 @@ cellIdPreamble: "cell-"
 gradientMode: "hue"
 
 # ------------------------------------------------------------------------------
-# Aparência e destaque
+# Appearance & Highlighting
 # ------------------------------------------------------------------------------
 tagConfig:
   legend:
@@ -15,9 +17,6 @@ tagConfig:
     - "OK"
     - "WARN"
     - "CRIT"
-    - "|"
-    - "Origem:"
-    - "Bitdefender"
   color: "yellow"
   highlightRgbFactor: 5
   lowlightAlphaFactor: 0.3
@@ -27,158 +26,100 @@ tagConfig:
 # ------------------------------------------------------------------------------
 
 cells:
-  # ---------------------------------------------------------------------------
-  # ENABLED HOSTS
-  # ---------------------------------------------------------------------------
-
-  dc01_status:
-    dataRef: dc01_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "orange", level: 1 }
-        - { color: "red", level: 2 }
-    tags: ["status", "enabled", "active"]
-
-  vmware_hypervisor_172_20_0_5_status:
-    dataRef: vmware_hypervisor_172_20_0_5_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "red", level: 2 }
-    tags: ["vmware", "enabled", "active"]
-
-  vmware_hypervisor_172_20_0_7_status:
-    dataRef: vmware_hypervisor_172_20_0_7_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "red", level: 2 }
-    tags: ["vmware", "enabled", "active"]
-
-  sw_apoio_ind_172_20_1_28_status:
-    dataRef: sw_apoio_ind_172_20_1_28_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "orange", level: 1 }
-        - { color: "red", level: 2 }
-    tags: ["switch", "enabled", "active"]
-
-  sw_srv_10g_172_20_1_29_status:
-    dataRef: sw_srv_10g_172_20_1_29_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "orange", level: 1 }
-        - { color: "red", level: 2 }
-    tags: ["switch", "enabled", "active"]
-
-  sw_producao_172_20_1_30_status:
-    dataRef: sw_producao_172_20_1_30_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "orange", level: 1 }
-        - { color: "red", level: 2 }
-    tags: ["switch", "enabled", "active"]
-
-  sw_dist1_172_20_1_31_status:
-    dataRef: sw_dist1_172_20_1_31_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "orange", level: 1 }
-        - { color: "red", level: 2 }
-    tags: ["switch", "enabled", "active"]
-
-  sw_dist2_172_20_1_32_status:
-    dataRef: sw_dist2_172_20_1_32_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "orange", level: 1 }
-        - { color: "red", level: 2 }
-    tags: ["switch", "enabled", "active"]
-
-  idrac_firewall_172_20_1_140_status:
-    dataRef: idrac_firewall_172_20_1_140_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "red", level: 2 }
-    tags: ["idrac", "enabled", "active"]
-
-  fortigate_100f_status:
-    dataRef: fortigate_100f_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "red", level: 2 }
-    tags: ["firewall", "enabled", "active"]
-
-  fortigate_60f_status:
-    dataRef: fortigate_60f_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "red", level: 2 }
-    tags: ["firewall", "enabled", "active"]
-
-  vmware_vcenter_server_status:
-    dataRef: vmware_vcenter_server_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "semi-dark-green", level: 0 }
-        - { color: "red", level: 2 }
-    tags: ["vmware", "enabled", "active"]
 
   # ---------------------------------------------------------------------------
-  # DISABLED HOSTS
+  # ENABLED NODES
   # ---------------------------------------------------------------------------
 
-  sw_fbc1_172_20_1_37_status:
-    dataRef: sw_fbc1_172_20_1_37_status
+  node_01_status:
+    dataRef: node_01_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["enabled", "active"]
+
+  node_02_status:
+    dataRef: node_02_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["enabled", "active"]
+
+  node_03_status:
+    dataRef: node_03_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["enabled", "active"]
+
+  node_04_status:
+    dataRef: node_04_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["enabled", "active"]
+
+  node_05_status:
+    dataRef: node_05_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["enabled", "active"]
+
+  node_06_status:
+    dataRef: node_06_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["enabled", "active"]
+
+  node_07_status:
+    dataRef: node_07_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["enabled", "active"]
+
+  node_08_status:
+    dataRef: node_08_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["enabled", "active"]
+
+  # ---------------------------------------------------------------------------
+  # DISABLED / INACTIVE NODES
+  # ---------------------------------------------------------------------------
+
+  node_09_status:
+    dataRef: node_09_status
     label: { separator: replace }
     labelColor:
       thresholds:
         - { color: "gray", level: 0 }
     tags: ["disabled"]
-
-  ilo_ml310_172_20_1_216_status:
-    dataRef: ilo_ml310_172_20_1_216_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "gray", level: 0 }
-    tags: ["disabled"]
-
-  idrac_srv6_192_168_0_56_status:
-    dataRef: idrac_srv6_192_168_0_56_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "gray", level: 0 }
-    tags: ["disabled"]
-
-  idrac_srv16_192_168_0_66_status:
-    dataRef: idrac_srv16_192_168_0_66_status
-    label: { separator: replace }
-    labelColor:
-      thresholds:
-        - { color: "gray", level: 0 }
-    tags: ["disabled"]
-
 

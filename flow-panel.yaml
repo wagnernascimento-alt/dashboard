@@ -1,5 +1,76 @@
+# ------------------------------------------------------------------------------
+# Pikolin Sentinel - Grafana Flow Panel
+# ------------------------------------------------------------------------------
+
+cellIdPreamble: "cell-"
+gradientMode: "hue"
+
 cells:
+
+  # ---------------------------------------------------------------------------
+  # DC01
+  # ---------------------------------------------------------------------------
   dc01_status:
     dataRef: dc01_status
     label:
       separator: replace
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }   # OK
+        - { color: "orange", level: 1 }            # Warning
+        - { color: "red", level: 2 }               # Critical
+    link:
+      url: "/d/host-history?var-host=DC01"
+      targetBlank: true
+
+  dc01_threats:
+    dataRef: dc01_threats
+    label:
+      separator: colon
+      units: short
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "red", level: 1 }
+
+  # ---------------------------------------------------------------------------
+  # ProtheusDB2
+  # ---------------------------------------------------------------------------
+  protheusdb2_status:
+    dataRef: protheusdb2_status
+    label:
+      separator: replace
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    link:
+      url: "/d/host-history?var-host=ProtheusDB2"
+      targetBlank: true
+
+  protheusdb2_threats:
+    dataRef: protheusdb2_threats
+    label:
+      separator: colon
+      units: short
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "red", level: 1 }
+
+  # ---------------------------------------------------------------------------
+  # VMware vCenter
+  # ---------------------------------------------------------------------------
+  vcenter_status:
+    dataRef: vcenter_status
+    label:
+      separator: replace
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    link:
+      url: "/d/host-history?var-host=vCenter"
+      targetBlank: true

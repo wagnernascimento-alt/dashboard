@@ -83,3 +83,158 @@ cells:
         - { color: "semi-dark-green", level: 0 }
         - { color: "red", level: 1 }
     tags: ["threats", "bitdefender"]
+  # ---------------------------------------------------------------------------
+  # ENABLED HOSTS
+  # ---------------------------------------------------------------------------
+
+  dc01_status:
+    dataRef: dc01_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["status", "enabled", "active"]
+
+  vmware_hypervisor_172_20_0_5_status:
+    dataRef: vmware_hypervisor_172_20_0_5_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "red", level: 2 }
+    tags: ["vmware", "enabled", "active"]
+
+  vmware_hypervisor_172_20_0_7_status:
+    dataRef: vmware_hypervisor_172_20_0_7_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "red", level: 2 }
+    tags: ["vmware", "enabled", "active"]
+
+  sw_apoio_ind_172_20_1_28_status:
+    dataRef: sw_apoio_ind_172_20_1_28_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["switch", "enabled", "active"]
+
+  sw_srv_10g_172_20_1_29_status:
+    dataRef: sw_srv_10g_172_20_1_29_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["switch", "enabled", "active"]
+
+  sw_producao_172_20_1_30_status:
+    dataRef: sw_producao_172_20_1_30_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["switch", "enabled", "active"]
+
+  sw_dist1_172_20_1_31_status:
+    dataRef: sw_dist1_172_20_1_31_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["switch", "enabled", "active"]
+
+  sw_dist2_172_20_1_32_status:
+    dataRef: sw_dist2_172_20_1_32_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "orange", level: 1 }
+        - { color: "red", level: 2 }
+    tags: ["switch", "enabled", "active"]
+
+  idrac_firewall_172_20_1_140_status:
+    dataRef: idrac_firewall_172_20_1_140_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "red", level: 2 }
+    tags: ["idrac", "enabled", "active"]
+
+  fortigate_100f_status:
+    dataRef: fortigate_100f_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "red", level: 2 }
+    tags: ["firewall", "enabled", "active"]
+
+  fortigate_60f_status:
+    dataRef: fortigate_60f_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "red", level: 2 }
+    tags: ["firewall", "enabled", "active"]
+
+  vmware_vcenter_server_status:
+    dataRef: vmware_vcenter_server_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "semi-dark-green", level: 0 }
+        - { color: "red", level: 2 }
+    tags: ["vmware", "enabled", "active"]
+
+  # ---------------------------------------------------------------------------
+  # DISABLED HOSTS
+  # ---------------------------------------------------------------------------
+
+  sw_fbc1_172_20_1_37_status:
+    dataRef: sw_fbc1_172_20_1_37_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "gray", level: 0 }
+    tags: ["disabled"]
+
+  ilo_ml310_172_20_1_216_status:
+    dataRef: ilo_ml310_172_20_1_216_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "gray", level: 0 }
+    tags: ["disabled"]
+
+  idrac_srv6_192_168_0_56_status:
+    dataRef: idrac_srv6_192_168_0_56_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "gray", level: 0 }
+    tags: ["disabled"]
+
+  idrac_srv16_192_168_0_66_status:
+    dataRef: idrac_srv16_192_168_0_66_status
+    label: { separator: replace }
+    labelColor:
+      thresholds:
+        - { color: "gray", level: 0 }
+    tags: ["disabled"]
+
+

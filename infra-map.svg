@@ -11,7 +11,7 @@
     </style>
   </defs>
 
-  <!-- ======================= CORE NODES ======================= -->
+  <!-- ======================= ROW 1 ======================= -->
 
   <g id="cell-node_01_status">
     <rect class="card" x="40" y="40" width="220" height="120"/>
@@ -22,70 +22,70 @@
   </g>
 
   <g id="cell-node_02_status">
-    <rect class="card" x="280" y="40" width="220" height="120"/>
-    <rect class="icon-fill" x="300" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="300" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="300" y="110">Node 02</text>
-    <text class="metric" x="300" y="130">Status</text>
+    <rect class="card" x="300" y="40" width="220" height="120"/>
+    <rect class="icon-fill" x="320" y="68" width="26" height="14" rx="2"/>
+    <rect class="icon-fill" x="320" y="86" width="26" height="8" rx="2"/>
+    <text class="title" x="320" y="110">Node 02</text>
+    <text class="metric" x="320" y="130">Status</text>
   </g>
 
   <g id="cell-node_03_status">
-    <rect class="card" x="520" y="40" width="220" height="120"/>
-    <ellipse class="icon-fill" cx="553" cy="72" rx="13" ry="5"/>
-    <rect class="icon-fill" x="540" y="72" width="26" height="18"/>
-    <ellipse class="icon-fill" cx="553" cy="90" rx="13" ry="5"/>
-    <text class="title" x="540" y="110">Node 03</text>
-    <text class="metric" x="540" y="130">Status</text>
+    <rect class="card" x="560" y="40" width="220" height="120"/>
+    <ellipse class="icon-fill" cx="593" cy="72" rx="13" ry="5"/>
+    <rect class="icon-fill" x="580" y="72" width="26" height="18"/>
+    <ellipse class="icon-fill" cx="593" cy="90" rx="13" ry="5"/>
+    <text class="title" x="580" y="110">Node 03</text>
+    <text class="metric" x="580" y="130">Status</text>
   </g>
 
   <g id="cell-node_04_status">
-    <rect class="card" x="760" y="40" width="220" height="120"/>
-    <rect class="icon-fill" x="780" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="780" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="780" y="110">Node 04</text>
-    <text class="metric" x="780" y="130">Status</text>
+    <rect class="card" x="820" y="40" width="220" height="120"/>
+    <rect class="icon-fill" x="840" y="68" width="26" height="14" rx="2"/>
+    <rect class="icon-fill" x="840" y="86" width="26" height="8" rx="2"/>
+    <text class="title" x="840" y="110">Node 04</text>
+    <text class="metric" x="840" y="130">Status</text>
   </g>
+
+  <!-- ======================= ROW 2 ======================= -->
 
   <g id="cell-node_05_status">
-    <rect class="card" x="1000" y="40" width="220" height="120"/>
-    <rect class="icon-fill" x="1020" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="1020" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="1020" y="260">Node 05</text>
-    <text class="metric" x="1020" y="280">Status</text>
-  </g>
-
-  <g id="cell-node_06_status">
-    <rect class="card" x="1240" y="40" width="220" height="120"/>
-    <rect class="icon-fill" x="1260" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="1260" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="1260" y="260">Node 06</text>
-    <text class="metric" x="1260" y="280">Status</text>
-  </g>
-
-  <!-- ======================= EDGE / STORAGE ======================= -->
-
-  <g id="cell-node_07_status">
     <rect class="card" x="40" y="190" width="220" height="120"/>
-    <rect class="icon-fill" x="60" y="72" width="26" height="18" rx="3"/>
-    <rect class="icon-fill" x="60" y="92" width="26" height="6" rx="3"/>
-    <text class="title" x="60" y="260">Node 07</text>
+    <rect class="icon-fill" x="60" y="218" width="26" height="14" rx="2"/>
+    <rect class="icon-fill" x="60" y="236" width="26" height="8" rx="2"/>
+    <text class="title" x="60" y="260">Node 05</text>
     <text class="metric" x="60" y="280">Status</text>
   </g>
 
-  <g id="cell-node_08_status">
-    <rect class="card" x="280" y="190" width="220" height="120"/>
-    <rect class="icon-fill" x="300" y="72" width="26" height="18" rx="3"/>
-    <rect class="icon-fill" x="300" y="92" width="26" height="6" rx="3"/>
-    <text class="title" x="300" y="260">Node 08</text>
-    <text class="metric" x="300" y="280">Status</text>
+  <g id="cell-node_06_status">
+    <rect class="card" x="300" y="190" width="220" height="120"/>
+    <rect class="icon-fill" x="320" y="218" width="26" height="14" rx="2"/>
+    <rect class="icon-fill" x="320" y="236" width="26" height="8" rx="2"/>
+    <text class="title" x="320" y="260">Node 06</text>
+    <text class="metric" x="320" y="280">Status</text>
   </g>
 
-  <!-- ======================= INACTIVE ======================= -->
+  <g id="cell-node_07_status">
+    <rect class="card" x="560" y="190" width="220" height="120"/>
+    <rect class="icon-fill" x="580" y="222" width="26" height="18" rx="3"/>
+    <rect class="icon-fill" x="580" y="242" width="26" height="6" rx="3"/>
+    <text class="title" x="580" y="260">Node 07</text>
+    <text class="metric" x="580" y="280">Status</text>
+  </g>
+
+  <g id="cell-node_08_status">
+    <rect class="card" x="820" y="190" width="220" height="120"/>
+    <rect class="icon-fill" x="840" y="222" width="26" height="18" rx="3"/>
+    <rect class="icon-fill" x="840" y="242" width="26" height="6" rx="3"/>
+    <text class="title" x="840" y="260">Node 08</text>
+    <text class="metric" x="840" y="280">Status</text>
+  </g>
+
+  <!-- ======================= ROW 3 ======================= -->
 
   <g id="cell-node_09_status">
     <rect class="card" x="40" y="340" width="220" height="120"/>
-    <rect class="icon-fill" x="60" y="72" width="26" height="18" rx="3"/>
-    <rect class="icon-fill" x="60" y="92" width="26" height="6" rx="3"/>
+    <rect class="icon-fill" x="60" y="372" width="26" height="18" rx="3"/>
+    <rect class="icon-fill" x="60" y="392" width="26" height="6" rx="3"/>
     <text class="title" x="60" y="410">Node 09</text>
     <text class="metric" x="60" y="430">Inactive</text>
   </g>

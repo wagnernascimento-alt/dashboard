@@ -19,7 +19,7 @@ tagConfig:
     - "CRIT"
   color: "yellow"
   highlightRgbFactor: 5
-  lowlightAlphaFactor: 0.3
+  lowlightAlphaFactor: 1
 
 # ------------------------------------------------------------------------------
 # Cells

@@ -1,160 +1,136 @@
-<svg width="2600" height="5200" viewBox="0 0 2600 5200"
+<svg width="2600" height="3600" viewBox="0 0 2600 3600"
      xmlns="http://www.w3.org/2000/svg"
      style="background:#0b1220; font-family: Inter, Arial, sans-serif;">
 
   <defs>
     <style>
       .card { fill:#0f172a; stroke:#1f2937; stroke-width:3; rx:14; }
-      .title { fill:#e5e7eb; font-size:12px; font-weight:600; }
+      .title { fill:#e5e7eb; font-size:13px; font-weight:600; }
       .metric { fill:#cbd5f5; font-size:11px; }
-      .icon-fill { fill:#60a5fa; }
-      .icon-cut { stroke:#0b1220; stroke-width:1.5; }
+      .icon { font-size:20px; }
+      .group { }
     </style>
   </defs>
 
-  <!-- ====================================================================== -->
-  <!-- SERVERS / CORE -->
-  <!-- ====================================================================== -->
+  <!-- ======================= CORE / SERVERS ======================= -->
 
-  <!-- DC01 -->
-  <g id="cell-dc01_status">
+  <!-- Row 1 -->
+  <g id="cell-dc01_status" class="group">
     <rect class="card" x="40" y="40" width="220" height="120"/>
-    <!-- server icon -->
-    <rect class="icon-fill" x="60" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="60" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="60" y="108">DC01</text>
-    <text class="metric" x="60" y="126">Status</text>
+    <text class="icon" x="60" y="85">🖥️</text>
+    <text class="title" x="60" y="110">DC01</text>
+    <text class="metric" x="60" y="130">Status</text>
   </g>
 
-  <!-- Acesso Remoto -->
   <g id="cell-acessoremoto_status">
     <rect class="card" x="280" y="40" width="220" height="120"/>
-    <!-- server icon -->
-    <rect class="icon-fill" x="300" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="300" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="300" y="108">Acesso Remoto</text>
-    <text class="metric" x="300" y="126">Status</text>
+    <text class="icon" x="300" y="85">🖧</text>
+    <text class="title" x="300" y="110">Acesso Remoto</text>
+    <text class="metric" x="300" y="130">Status</text>
   </g>
 
-  <!-- Protheus DB2 -->
   <g id="cell-protheusdb2_status">
     <rect class="card" x="520" y="40" width="220" height="120"/>
-    <!-- database icon -->
-    <ellipse class="icon-fill" cx="553" cy="72" rx="13" ry="5"/>
-    <rect class="icon-fill" x="540" y="72" width="26" height="18"/>
-    <ellipse class="icon-fill" cx="553" cy="90" rx="13" ry="5"/>
-    <text class="title" x="540" y="108">ProtheusDB2</text>
-    <text class="metric" x="540" y="126">Status</text>
+    <text class="icon" x="540" y="85">🗄️</text>
+    <text class="title" x="540" y="110">Protheus DB2</text>
+    <text class="metric" x="540" y="130">Status</text>
   </g>
 
-  <!-- Protheus App -->
   <g id="cell-protheusapp_status">
     <rect class="card" x="760" y="40" width="220" height="120"/>
-    <!-- app/server icon -->
-    <rect class="icon-fill" x="780" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="780" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="780" y="108">ProtheusApp</text>
-    <text class="metric" x="780" y="126">Status</text>
-  </g>
-
-  <!-- Datasul App -->
-  <g id="cell-datasul_app_status">
-    <rect class="card" x="1000" y="40" width="220" height="120"/>
-    <!-- app/server icon -->
-    <rect class="icon-fill" x="1020" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="1020" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="1020" y="108">Datasul App</text>
-    <text class="metric" x="1020" y="126">Status</text>
-  </g>
-
-  <!-- Banco Datasul -->
-  <g id="cell-banco_datasul_status">
-    <rect class="card" x="1240" y="40" width="220" height="120"/>
-    <!-- database icon -->
-    <ellipse class="icon-fill" cx="1273" cy="72" rx="13" ry="5"/>
-    <rect class="icon-fill" x="1260" y="72" width="26" height="18"/>
-    <ellipse class="icon-fill" cx="1273" cy="90" rx="13" ry="5"/>
-    <text class="title" x="1260" y="108">Banco Datasul</text>
-    <text class="metric" x="1260" y="126">Status</text>
-  </g>
-
-  <!-- ====================================================================== -->
-  <!-- VIRTUALIZATION -->
-  <!-- ====================================================================== -->
-
-  <g id="cell-vmware_hypervisor_172_20_0_5_status">
-    <rect class="card" x="40" y="190" width="220" height="120"/>
-    <!-- vm/server icon -->
-    <rect class="icon-fill" x="60" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="60" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="60" y="258">VMware HV 0.5</text>
-    <text class="metric" x="60" y="276">Status</text>
-  </g>
-
-  <g id="cell-vmware_hypervisor_172_20_0_7_status">
-    <rect class="card" x="280" y="190" width="220" height="120"/>
-    <rect class="icon-fill" x="300" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="300" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="300" y="258">VMware HV 0.7</text>
-    <text class="metric" x="300" y="276">Status</text>
+    <text class="icon" x="780" y="85">📦</text>
+    <text class="title" x="780" y="110">Protheus App</text>
+    <text class="metric" x="780" y="130">Status</text>
   </g>
 
   <g id="cell-vmware_vcenter_server_status">
-    <rect class="card" x="520" y="190" width="220" height="120"/>
-    <rect class="icon-fill" x="540" y="68" width="26" height="14" rx="2"/>
-    <rect class="icon-fill" x="540" y="86" width="26" height="8" rx="2"/>
-    <text class="title" x="540" y="258">vCenter</text>
-    <text class="metric" x="540" y="276">Status</text>
+    <rect class="card" x="1000" y="40" width="220" height="120"/>
+    <text class="icon" x="1020" y="85">☁️</text>
+    <text class="title" x="1020" y="110">VMware vCenter</text>
+    <text class="metric" x="1020" y="130">Status</text>
   </g>
 
-  <!-- ====================================================================== -->
-  <!-- NETWORK / FIREWALL -->
-  <!-- ====================================================================== -->
+  <g id="cell-vmware_infrastructure_status">
+    <rect class="card" x="1240" y="40" width="220" height="120"/>
+    <text class="icon" x="1260" y="85">☁️</text>
+    <text class="title" x="1260" y="110">VMware Infra</text>
+    <text class="metric" x="1260" y="130">Status</text>
+  </g>
+
+  <!-- ======================= NETWORK ======================= -->
 
   <g id="cell-fortigate_100f_status">
-    <rect class="card" x="40" y="340" width="220" height="120"/>
-    <!-- firewall icon -->
-    <rect class="icon-fill" x="60" y="68" width="26" height="26" rx="3"/>
-    <path class="icon-cut" d="M60 78h26M60 86h26M68 68v26M76 68v26"/>
-    <text class="title" x="60" y="408">Fortigate 100F</text>
-    <text class="metric" x="60" y="426">Status</text>
+    <rect class="card" x="40" y="190" width="220" height="120"/>
+    <text class="icon" x="60" y="235">🔥</text>
+    <text class="title" x="60" y="260">Fortigate 100F</text>
+    <text class="metric" x="60" y="280">Status</text>
   </g>
 
   <g id="cell-fortigate_60f_status">
-    <rect class="card" x="280" y="340" width="220" height="120"/>
-    <rect class="icon-fill" x="300" y="68" width="26" height="26" rx="3"/>
-    <path class="icon-cut" d="M300 78h26M300 86h26M308 68v26M316 68v26"/>
-    <text class="title" x="300" y="408">Fortigate 60F</text>
-    <text class="metric" x="300" y="426">Status</text>
+    <rect class="card" x="280" y="190" width="220" height="120"/>
+    <text class="icon" x="300" y="235">🔥</text>
+    <text class="title" x="300" y="260">Fortigate 60F</text>
+    <text class="metric" x="300" y="280">Status</text>
   </g>
 
-  <!-- ====================================================================== -->
-  <!-- STORAGE / BACKUP -->
-  <!-- ====================================================================== -->
+  <g id="cell-sw_producao_172_20_1_30_status">
+    <rect class="card" x="520" y="190" width="220" height="120"/>
+    <text class="icon" x="540" y="235">🔀</text>
+    <text class="title" x="540" y="260">SW Produção</text>
+    <text class="metric" x="540" y="280">Status</text>
+  </g>
+
+  <g id="cell-sw_dist1_172_20_1_31_status">
+    <rect class="card" x="760" y="190" width="220" height="120"/>
+    <text class="icon" x="780" y="235">🔀</text>
+    <text class="title" x="780" y="260">SW Dist 1</text>
+    <text class="metric" x="780" y="280">Status</text>
+  </g>
+
+  <g id="cell-sw_dist2_172_20_1_32_status">
+    <rect class="card" x="1000" y="190" width="220" height="120"/>
+    <text class="icon" x="1020" y="235">🔀</text>
+    <text class="title" x="1020" y="260">SW Dist 2</text>
+    <text class="metric" x="1020" y="280">Status</text>
+  </g>
+
+  <g id="cell-idrac_firewall_172_20_1_140_status">
+    <rect class="card" x="1240" y="190" width="220" height="120"/>
+    <text class="icon" x="1260" y="235">🧱</text>
+    <text class="title" x="1260" y="260">iDRAC Firewall</text>
+    <text class="metric" x="1260" y="280">Status</text>
+  </g>
+
+  <!-- ======================= STORAGE / BACKUP ======================= -->
 
   <g id="cell-nas_status">
-    <rect class="card" x="40" y="490" width="220" height="120"/>
-    <!-- storage icon -->
-    <rect class="icon-fill" x="60" y="72" width="26" height="18" rx="3"/>
-    <rect class="icon-fill" x="60" y="92" width="26" height="6" rx="3"/>
-    <text class="title" x="60" y="558">NAS</text>
-    <text class="metric" x="60" y="576">Status</text>
+    <rect class="card" x="40" y="340" width="220" height="120"/>
+    <text class="icon" x="60" y="385">💾</text>
+    <text class="title" x="60" y="410">NAS</text>
+    <text class="metric" x="60" y="430">Status</text>
   </g>
 
   <g id="cell-veeam_backup_status">
-    <rect class="card" x="280" y="490" width="220" height="120"/>
-    <rect class="icon-fill" x="300" y="72" width="26" height="18" rx="3"/>
-    <rect class="icon-fill" x="300" y="92" width="26" height="6" rx="3"/>
-    <text class="title" x="300" y="558">Veeam Backup</text>
-    <text class="metric" x="300" y="576">Status</text>
+    <rect class="card" x="280" y="340" width="220" height="120"/>
+    <text class="icon" x="300" y="385">🧪</text>
+    <text class="title" x="300" y="410">Veeam Backup</text>
+    <text class="metric" x="300" y="430">Status</text>
   </g>
 
   <g id="cell-veeam_immutable_status">
-    <rect class="card" x="520" y="490" width="220" height="120"/>
-    <rect class="icon-fill" x="540" y="72" width="26" height="18" rx="3"/>
-    <rect class="icon-fill" x="540" y="92" width="26" height="6" rx="3"/>
-    <text class="title" x="540" y="558">Veeam Immutable</text>
-    <text class="metric" x="540" y="576">Status</text>
+    <rect class="card" x="520" y="340" width="220" height="120"/>
+    <text class="icon" x="540" y="385">🛡️</text>
+    <text class="title" x="540" y="410">Veeam Immutable</text>
+    <text class="metric" x="540" y="430">Status</text>
+  </g>
+
+  <!-- ======================= DISABLED ======================= -->
+
+  <g id="cell-sw_fbc1_172_20_1_37_status">
+    <rect class="card" x="40" y="490" width="220" height="120"/>
+    <text class="icon" x="60" y="535">⛔</text>
+    <text class="title" x="60" y="560">SW FBC1</text>
+    <text class="metric" x="60" y="580">Disabled</text>
   </g>
 
 </svg>
